@@ -24,3 +24,5 @@ Things you may want to cover:
 * ...
 
 look into S3 storage for photos, etc, or Digital ocean.
+
+- this project is using the Solidus gem suite as a base to build around.
