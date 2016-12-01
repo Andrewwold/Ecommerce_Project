@@ -16,6 +16,13 @@
  *= require_self
  */
 
+body {height:100%;}
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+
+.carousel {
+  height: 100%;
+}
 
 .carousel .item {
     border-radius: 35px;
@@ -31,4 +38,8 @@
 	border-radius: 35px;
     overflow: hidden;
 
+}
+.list-unstyled {
+	font-style: italic;
+	
 }
