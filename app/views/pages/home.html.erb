@@ -1,117 +1,37 @@
 
-
-
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">			
-			<div class="carousel slide" id="carousel-688142">
-				<ol class="carousel-indicators">
-					<li class="active" data-slide-to="0" data-target="#carousel-688142">
-					</li>
-				
-					<li data-slide-to="1" data-target="#carousel-688142">
-					</li>
-				
-					<li data-slide-to="2" data-target="#carousel-688142">
-					</li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="item active">
-					<%=image_tag("870969-antique-books-bookshelf-desks-library-objects 2.jpg") %>
-					
-						<div class="carousel-caption">
-							<h4>
-								Build Your Collection!
-							</h4>
-							<p>
-								We are here to help you grow your collection to any size you want!
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<%= image_tag("9418844-old-antique-books-Stock-Photo-library-old-book.jpg") %>
-						<div class="carousel-caption">
-							<h4>
-								If we dont have it, We can find it!
-							</h4>
-							<p>
-								Make an offer and if it can be found at the price you want, we will find it for you! 
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<%= image_tag("antique-books.jpg") %>
-						<div class="carousel-caption">
-							<h4>
-								The comfort of a book never grows old!
-							</h4>
-							<p>
-								New, old or antique, your book wishes can come true with our servise!
-							</p>
-						</div>
-					</div>
-				</div> <a class="left carousel-control" href="#carousel-688142" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-688142" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <div class="active item", style: "background-size: cover">
+        	<%=image_tag("870969-antique-books-bookshelf-desks-library-objects 2.jpg") %>
+        	<div class="carousel-caption">
+			 <h4>
+			  The comfort of a book never grows old!
+			 </h4>
+			 <p>
+			  New, old or antique, your book wishes can come true with our servise!
+			 </p>
 			</div>
-			<div class="jumbotron">
-				<h2>
-					Books are Life <h5>&#8482;</h5>
-				</h2>
-				<p>
-					We are a company made up of book lovers and collectors, who want to spread that love of books to all who want to know it. Let us share our skills and expertise to help you grow your passion and love of books!
-				</p>
-				<p>
-
-				<%= link_to "About", main_app.pages_about_us_path, class: "btn btn-primary btn-large" %>
-					
-			</div>
-			<ul class="list-unstyled">
-				<li>
-					Lorem ipsum dolor sit amet
-				</li>
-				<li>
-					Consectetur adipiscing elit
-				</li>
-				<li>
-					Integer molestie lorem at massa
-				</li>
-				<li>
-					Facilisis in pretium nisl aliquet
-				</li>
-				<li>
-					Nulla volutpat aliquam velit
-				</li>
-				<li>
-					Faucibus porta lacus fringilla vel
-				</li>
-				<li>
-					Aenean sit amet erat nunc
-				</li>
-				<li>
-					Eget porttitor lorem
-				</li>
-			</ul>
-			<div class="panel-group" id="panel-821369">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						 <a class="panel-title" data-toggle="collapse" data-parent="#panel-821369" href="#panel-element-914614">Demo Panel</a>
-					</div>
-					<div id="panel-element-914614" class="panel-collapse collapse in">
-						<div class="panel-body">
-							Anim pariatur cliche...
-						</div>
-					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-821369" href="#panel-element-737454">Demo Panel #2</a>
-					</div>
-					<div id="panel-element-737454" class="panel-collapse collapse">
-						<div class="panel-body">
-							Anim pariatur cliche...
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+        </div>
+        
+        <div class="item">
+        	<%= image_tag("antique-books.jpg") %>
+        </div>
+        
+        <div class="item">
+        	<%=image_tag("870969-antique-books-bookshelf-desks-library-objects 2.jpg") %>
+        </div>
+        </div>
+        
+    </div>
 </div>
+<div id="cf2" class="shadow">
+  <img class="bottom photo" src="http://i.ebayimg.com/00/s/NDMyWDMwMA==/z/mnoAAOSwQItUILbW/$_35.JPG?set_id=2" />
+  <img class="top photo" src="http://zolochiv.net/wp-content/uploads/2011/05/rada-vudavsiv-300x300.jpg" />
+</div>
+<p id="cf_onclick">Click me to toggle</p>

@@ -1,5 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "over-ride-bootstrap";
+@import "pages";
+@import "about";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -16,30 +19,12 @@
  *= require_self
  */
 
-body {height:100%;}
-.carousel,.item,.active{height:100%;}
-.carousel-inner{height:100%;}
-
-.carousel {
-  height: 100%;
+html,
+body {
+	margin: 0;
+	padding: 0;
 }
 
-.carousel .item {
-    border-radius: 35px;
-    background-color: rgba(0,0,0,0);
-    overflow: hidden;
-}
-.carousel-control {
-    border-radius: 35px;
-    overflow: hidden;
-}
+.panel-title {
 
-.left carousel-control {
-	border-radius: 35px;
-    overflow: hidden;
-
-}
-.list-unstyled {
-	font-style: italic;
-	
 }
