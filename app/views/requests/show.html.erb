@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Book Title:</strong>
+  <%= @requests.book_title %>
+</p>
+
+<p>
+  <strong>Publishing Date:</strong>
+  <%= @requests.publishing_date %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @requests.author %>
+</p>
+
+<p>
+  <strong>Desired Price:</strong>
+  <%= @requests.desired_price %>
+</p>
+
+<p>
+  <strong>Language of Edition:</strong>
+  <%= @requests.language_of_edition %>
+</p>
+
+
+<%= link_to 'Edit', edit_request_path(@requests) %> |
+<%= link_to 'Back', requests_path %>
