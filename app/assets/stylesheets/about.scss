@@ -3,6 +3,10 @@
 	padding-bottom: 80px;
 }
 
+.bottom {
+  border-radius: 10px;
+}
+
 .test {
 	float: left;
 	overflow: auto;
@@ -15,8 +19,9 @@
 
 .cf2 {
   position:relative;
-  height:180px;
-  width:180px;
+  border-radius: 10px;
+  height:182px;
+  width:182px;
   margin:0 auto;
 
 }
@@ -27,6 +32,7 @@
 }
 
 .cf2 img {
+  border-radius: 10px;
   position:absolute;
   left:0;
   -webkit-transition: opacity 1s ease-in-out;
@@ -36,6 +42,7 @@
 }
 
 .cf2 img.transparent {
+border-radius: 10px;
 opacity:0;
 }
 .cf_onclick {

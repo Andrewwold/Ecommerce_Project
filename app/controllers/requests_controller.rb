@@ -1,5 +1,6 @@
 class RequestsController < ApplicationController
 before_action :set_requests, only: [:show, :edit, :update, :destroy]
+before_action :authenticate_spree_user!, except: [:index]
 
   
   def index

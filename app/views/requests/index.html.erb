@@ -23,8 +23,10 @@
         <td><%= request.desired_price %></td>
         <td><%= request.language_of_edition %></td>
         <td><%= link_to 'Show', request %></td>
+        <% if current_spree_user && current_user.type == 'AdminUser' %>
         <td><%= link_to 'Edit', edit_request_path(request) %></td>
         <td><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
