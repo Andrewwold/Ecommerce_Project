@@ -1,37 +1,41 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Requests</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Book Title</th>
+            <th>Publishing Date</th>
+            <th>Author</th>
+            <th>Desired Price</th>
+            <th>Language of Edition</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
 
-<table>
-  <thead>
-    <tr>
-      <th>Book Title</th>
-      <th>Publishing Date</th>
-      <th>Author</th>
-      <th>Desired Price</th>
-      <th>Language of Edition</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @requests.each do |request| %>
-      <tr>
-        <td><%= request.book_title %></td>
-        <td><%= request.publishing_date %></td>
-        <td><%= request.author %></td>
-        <td><%= request.desired_price %></td>
-        <td><%= request.language_of_edition %></td>
-        <td><%= link_to 'Show', request %></td>
-        <% if current_spree_user && current_user.type == 'AdminUser' %>
-        <td><%= link_to 'Edit', edit_request_path(request) %></td>
-        <td><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
+        <tbody>
+          <% @requests.each do |request| %>
+          <tr>
+            <td><%= request.book_title %></td>
+            <td><%= request.publishing_date %></td>
+            <td><%= request.author %></td>
+            <td><%= request.desired_price %></td>
+            <td><%= request.language_of_edition %></td>
+            <td><%= link_to 'Show', request %></td>
+            <% if current_spree_user == Spree::User.admin %>
+            <td><%= link_to 'Edit', edit_request_path(request) %></td>
+            <td><%= link_to 'Destroy', request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% end %>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 <br>
 
 <%= link_to 'New Request', new_request_path %>

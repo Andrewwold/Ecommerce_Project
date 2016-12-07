@@ -17,41 +17,34 @@
 	overflow: auto;
 }
 
-.cf2 {
+.cf {
   position:relative;
-  border-radius: 10px;
-  height:182px;
-  width:182px;
+  height:180px;
+  width:180px;
   margin:0 auto;
-
+  border-radius: 10px;
 }
-
-.cf2 p {
+.cf p {
   position:absolute;
+  width: 180;
+  height: 180;
   text-overflow: wrap;
+  border-radius: 10px;
 }
 
-.cf2 img {
+
+.cf img {
   border-radius: 10px;
   position:absolute;
   left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity .600s ease-in-out;
+  -moz-transition: opacity .600s ease-in-out;
+  -o-transition: opacity .600s ease-in-out;
+  transition: opacity .600s ease-in-out;
 }
 
-.cf2 img.transparent {
-border-radius: 10px;
-opacity:0;
+.cf img.top:hover {
+  opacity:0;
 }
-.cf_onclick {
-cursor:pointer;
-}
-
-
-
-
-
 
 

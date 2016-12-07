@@ -25,6 +25,7 @@
   <%= @requests.language_of_edition %>
 </p>
 
-
+<% if current_spree_user == Spree::User.admin %>
 <%= link_to 'Edit', edit_request_path(@requests) %> |
+<% end %>
 <%= link_to 'Back', requests_path %>

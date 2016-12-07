@@ -1,44 +1,51 @@
 <%= form_for(requests) do |f| %>
-  <% if requests.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(requests.errors.count, "error") %> prohibited this product from being saved:</h2>
+<% if requests.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(requests.errors.count, "error") %> prohibited this product from being saved:</h2>
 
-      <ul>
-      <% requests.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :book_title %>
-    <%= f.text_field :book_title %>
-  </div>
-
-  <div class="field">
-    <%= f.label :publishing_date %>
-    <%= f.date_field :publishing_date %>
-  </div>
-
-  <div class="field">
-    <%= f.label :author %>
-    <%= f.text_field :author %>
-  </div>
-
-  <div class="field">
-    <%= f.label :desired_price %>
-    <%= f.text_field :desired_price %>
-  </div>
-
-  <div class="field">
-    <%= f.label :language_of_edition %>
-    <%= f.text_field :language_of_edition %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <ul>
+    <% requests.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
 <% end %>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form role="form" class="form-inline">
+        <div class="form-group">
+          <div class="field ">
+            <%= f.label :book_title %>
+            <%= f.text_field :book_title %>
+          </div>
 
+          <div class="field">
+            <%= f.label :publishing_date %>
+            <%= f.date_field :publishing_date %>
+          </div>
+
+          <div class="field">
+            <%= f.label :author %>
+            <%= f.text_field :author %>
+          </div>
+
+          <div class="field">
+            <%= f.label :desired_price %>
+            <%= f.text_field :desired_price %>
+          </div>
+
+          <div class="field">
+            <%= f.label :language_of_edition %>
+            <%= f.text_field :language_of_edition %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit %>
+          </div>
+          <% end %>
+        </form>
+      </div>
+    </div>
+  </div>
